@@ -1,33 +1,18 @@
-# Cypress + Cucumber (BDD) + POM — SauceDemo v1
+#QA BDD Cypress - SauceDemo v1
 
-Proyecto listo para correr pruebas BDD con Cypress y el preprocesador de Cucumber, usando Page Object Model, apuntando a `https://www.saucedemo.com/v1`.
+Proyecto de automatización de pruebas **E2E con Cypress + Cucumber (BDD)**, implementando **Page Object Model (POM)** sobre el sitio [SauceDemo v1](https://www.saucedemo.com/v1/).
 
-## Requisitos
-- Node.js 18+ (recomendado)
-- npm
+---
 
-## Setup
-```bash
-npm install
-```
+##Tecnologías
 
-## Ejecutar
-- UI interactiva:
-```bash
-npm run cy:open
-```
-- Headless:
-```bash
-npm run cy:run
-```
+- [Cypress 13.x](https://www.cypress.io/)
+- [Cucumber Preprocessor (@badeball/cypress-cucumber-preprocessor)](https://github.com/badeball/cypress-cucumber-preprocessor)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Playwright-style Page Objects](https://martinfowler.com/bliki/PageObject.html)
+- [Node.js + npm](https://nodejs.org/)
 
-## Estructura
-- `cypress/pages/*`: Page Objects (Login, Inventory, Checkout)
-- `cypress/e2e/features/*`: Features Gherkin
-- `cypress/e2e/step-definitions/*`: Step Definitions
-- `cypress/fixtures/users.json`: credenciales de ejemplo
+---
 
-## Notas
-- La `baseUrl` está en `cypress.config.ts` como `https://www.saucedemo.com/v1`.
-- El login visita `/index.html` y valida navegación a `/inventory.html`.
-- Los selectores están mapeados para SauceDemo v1. Si cambia la UI, ajusta los Page Objects.
+## Estructura del proyecto
+
