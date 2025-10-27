@@ -21,3 +21,9 @@ Feature: Inventory
   Scenario: Sort products by name A to Z
     When I sort products by "Name (A to Z)"
     Then the product list should be sorted alphabetically
+    
+  @inventory
+  Scenario: Cart badge updates when adding one item
+    When I add "Sauce Labs Backpack" to the cart
+    Then the cart badge should show "1"
+

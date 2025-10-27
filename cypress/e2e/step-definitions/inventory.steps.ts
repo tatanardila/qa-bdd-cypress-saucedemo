@@ -35,3 +35,8 @@ Then('the product list should be sorted alphabetically', () => {
       expect(names).to.deep.equal(sorted);
     });
 });
+
+Then('the cart badge should show {string}', (count: string) => {
+  cy.get('.shopping_cart_badge').should('have.text', count);
+});
+
